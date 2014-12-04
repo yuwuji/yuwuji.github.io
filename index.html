@@ -389,6 +389,31 @@ function () {
 	})
 });
 </script>
-
+<!--百度统计 begin -->
+<script>
+//------------监测函数
+function monitorAdd(option){
+	if(option){
+		var obj=option.obj;
+		var action=option.action||'click';
+		var category=option.category||'页面监测';
+		var label=option.label||'';
+		if(obj && obj.length>0){
+			if(obj.length==1) obj.on(action,{category:category,action:action,label:label},monitorFunc);
+			else obj.each(function(i) {$(this).on(action,{category:category,action:action,label:label+(i+1)},monitorFunc);});
+		}//end if
+	}//end if
+}//end func
+function monitorFunc(e,option){
+	if(e) var data=e.data;
+	else var data=option;
+	if(data){
+		if(!data.action) data.action='系统交互行为';
+		_hmt.push(['_trackEvent', data.category, data.action, data.category+'——'+data.label]);
+		if(window.console) console.log('项目类别：'+data.category+' | '+'交互行为：'+data.action+' | '+'项目说明：'+data.category+'——'+data.label);
+	}//end if
+}//end func
+</script>
+<!--百度统计 end -->
 </body>
 <!-- InstanceEnd --></html>
