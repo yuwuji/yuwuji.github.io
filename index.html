@@ -1,1 +1,394 @@
-<h1>yuwuji's HomePage</h1>It works. 
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<title>海味购 够海味</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta http-equiv="cleartype" content="on">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes"><!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"><!--控制状态栏显示样式-->
+<meta name="apple-touch-fullscreen" content="no"><!--是否全屏-->
+<meta name="format-detection" content="telephone=no"><!--使设备浏览网页时对数字不启用电话功能-->
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="favicon.ico">
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/iphone.css" />
+<script>
+//平台检测
+var os=detectOS();
+//------------判断浏览器、操作系统
+function detectOS() {
+	var	userAgent=navigator.userAgent;
+	//console.log(userAgent);
+	var os = {};
+	os.android = userAgent.match(/(Android)\s+([\d.]+)/) || userAgent.match(/Silk-Accelerated/) ? true : false;
+	os.androidICS = os.android && userAgent.match(/(Android)\s4/) ? true : false;
+	os.ipad = userAgent.match(/(iPad).*OS\s([\d_]+)/) ? true : false;
+	os.iphone = !os.ipad && userAgent.match(/(iPhone\sOS)\s([\d_]+)/) ? true : false;
+	os.ios = os.ipad || os.iphone;
+	os.wp=userAgent.match(/Windows Phone/) || userAgent.match(/IEMobile/) ? true : false;
+	os.supportsTouch = ((window.DocumentTouch && document instanceof window.DocumentTouch) || 'ontouchstart' in window);
+	return os;
+}//end func
+//微信检测
+var isWeixin=detectWeixin();
+function detectWeixin(){
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") return true;
+	else return false;
+}//end func
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div class="wrap">
+<!-- InstanceBeginEditable name="content" -->
+    
+    <div class="container">
+        
+        <section class="stage stage1" data-id="1">
+            <div class="intro">
+            	<h4>海味购</h4>
+            	<p>够海味</p>
+                <p>卡地亚三兄弟，路易(Louis)、雅克<br>(Jacques)与皮埃尔(Pierre)，富有远见卓识的领导力，使卡地亚成为了全球最负盛名的高级珠宝品牌和钟表巨擘之一。</p> 
+            </div>
+        	<!--end intro -->
+        </section>
+        <!--end stage -->
+        
+        <section class="interlude" data-id="1">
+            <h4>卡地亚邀您参与风范测试<br>仅需三步即可雕塑出您的个人风范<br>专属匹配适合您的个性腕表</h4>
+        </section>
+        <!--end interlude -->
+        
+        <section class="sele sele1" data-id="1">
+			<div class="ques">
+            	<p>卡地亚邀您参与风范测试，<br>与您一起“雕塑时光”</p>
+                <h4>在你成就卓越人生的初期，<br>哪个精神更能代表你？</h4>
+            </div>
+            <div class="answ answ1">
+            	<h4>勇于冒险</h4>
+            	<p>敢于拼搏是典型的时代精神，<br>为成功的目标坚定地前行。<br>您身体力行，不惧未知，<br>在勇气中谱写辉煌的历史。</p>
+            	<p class="btn"><a class="btnAnsw" data-id="1"><i></i><span>点击选择</span></a></p>
+            </div>
+            <div class="answ answ2">
+            	<h4>富有远见</h4>
+            	<p>在复杂多变的时代里，<br>您眼光长远，<br>洞察到常人无法预见的事物，<br>率先引领未来，<br>成就非凡的事业。</p>
+            	<p class="btn"><a class="btnAnsw" data-id="2"><i></i><span>点击选择</span></a></p>
+           	</div>
+        </section>
+        <!--end sele -->
+        
+        <section class="stage stage2" data-id="2">
+        	<div class="focus">
+            	<ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>  
+              	<a class="boxBtn"></a>
+              	<a class="boxBtnL"></a>
+              	<a class="boxBtnR"></a>
+            </div>
+            
+            <div class="intro">
+            	<h4>制表大师</h4>
+            	<p>卡地亚在制表史上写就了一些最为美丽动人的传奇故事。今日的卡地亚腕表工作坊运用175种制表工艺，同时拥有逾 30 枚工作坊自制机芯，并将坚持其伟大的制表探险之旅。</p> 
+            </div>
+        	<!--end intro -->
+        </section>
+        <!--end stage -->
+        
+        <section class="sele sele2" data-id="2">
+        	<div class="ques">
+            	<p>卡地亚邀您参与风范测试，<br>与您一起“雕塑时光”</p>
+                <h4>在卓越奋斗的过程中，<br>你的哪个精神更具代表性？</h4>
+            </div>
+            <div class="answ answ1">
+            	<h4>坚持创新</h4>
+            	<p>从过去到现在，直至未来，<br>您富有创意的思维统领着进阶的步伐，<br>始终追求突破局限，不断前行。</p>
+            	<p class="btn"><a class="btnAnsw" data-id="1"><i></i><span>点击选择</span></a></p>
+            </div>
+            <div class="answ answ2">
+            	<h4>融汇精粹</h4>
+            	<p>您善于审视自我与洞察四周，<br>融汇众家所长于一身，<br>在孜孜不断的信念中尽善尽美。</p>
+            	<p class="btn"><a class="btnAnsw" data-id="2"><i></i><span>点击选择</span></a></p>
+           	</div>
+        </section>
+        <!--end sele -->
+        
+        <section class="stage stage3" data-id="3">
+            <div class="intro">
+            	<h4>造型腕表大师</h4>
+            	<p>通常以为，方即是方，圆即是圆。但对卡地亚而言，一切惯例皆可推翻。纵观其充满创新与开拓精神的历史，卡地亚曾创作过许多形态各异、独一无二、前所未有的造型腕表。这种挑战令人着迷，让我们有机会穿越时光隧道，开启美丽之旅。 </p>
+            </div>
+        	<!--end intro -->
+        </section>
+        <!--end stage -->
+        
+        <section class="prdu prdu1" data-id="3">
+            <h4>Santos-Dumont<br>动力储存日历显示腕表</h4>
+            <div class="intro">
+            	<p>手动上链机械机芯，18K玫瑰K金，皮表带<br>型号: W2020067</p>
+            	<p>方形：如问世于1904年的 Santos 腕表，专为飞行先驱阿尔伯特·山度士-杜蒙 (Alberto Santos-Dumont)打造，以便他在飞行中能够轻松读取时间。</p>
+            </div>
+       	</section>
+       	<!--end prdu -->
+        
+        <section class="prdu prdu2" data-id="3">
+        	<h4 class="big">TANK MC 腕表</h4>
+          	<div class="intro">
+            	<p>自动上链机械机芯，18K玫瑰K金，皮表带<br>型号: W5330001</p>
+            	<p>矩形：形似第一次世界大战期间首次投入使用的坦克，路易·卡地亚(Louis Cartier)于1917年设计出线条简洁的 Tank 腕表。自那时起，此传奇杰作便随着时代 变迁不断重塑自我、推陈出新，同时不忘保持其原有精髓。</p>
+            </div>
+        	<a class="btnVideo" data-vid="XNjEzMTM3MDYw"><img src="images/common/btn_play.png"></a>
+        </section>
+        <!--end prdu -->
+                
+        <section class="prdu prdu3" data-id="3">
+            <div class="w360" data-path='images/stage3/w3/360/'>
+            	<div class="box"><img src="images/stage3/w3/360/0.jpg"></div> 
+            	<div class="load"></div>
+            </div>
+            <h4>Rotonde de Cartier<br>双重神秘陀飞轮腕表</h4>
+            <div class="intro">
+            	<p>手动上链机械机芯，铂金，皮表带<br>型号: W1556210</p>
+            	<p>圆形：如 Rotonde de Cartier 腕表演绎的内敛曲线，搭载至臻复杂的高级制表系列机芯。</p>
+            </div>
+            <div class="sign360"><img src="images/common/360.png"></div>
+        </section>
+        <!--end prdu -->
+                
+        <section class="prdu prdu4" data-id="3">
+        	<h4>Ballon Bleu de Cartier<br>卡地亚蓝气球<br>浮动式陀飞轮腕表</h4>
+            <div class="intro">
+            	<p>手动上链机械机芯，18K白K金，皮表带<br>型号: W6920021</p>
+            	<p>BALLON：如 Ballon Bleu de Cartier 卡地亚蓝气球系列腕表，将几何元素融入自身以达最佳演绎。上链表冠大胆侵入表盘，罗马数字时标由此偏离轨迹，其突破设计诠释了卡地亚的创新精神。</p>
+        	</div>
+        </section>
+        <!--end prdu -->
+        
+        <section class="sele sele3" data-id="3">
+        	<div class="ques">
+            	<p>卡地亚邀您参与风范测试，<br>与您一起“雕塑时光”</p>
+                <h4>对于外在形象上的塑造，<br>以下哪个风格更能描述你？</h4>
+            </div>
+            <div class="answ answ1">
+            	<h4>重塑自我</h4>
+            	<p>您喜爱演绎不同的风格，<br>乐于尝试一切前所未有的可能，<br>善于重新定义自我，<br>总会使人眼前一亮。</p>
+            	<p class="btn"><a class="btnAnsw" data-id="1"><i></i><span>点击选择</span></a></p>
+            </div>
+            <div class="answ answ2">
+            	<h4>独一无二</h4>
+            	<p>您充满创新，拒绝墨守成规，<br>更不愿随波逐流，只有非凡独特<br>才能彰显你的鲜明个性。</p>
+            	<p class="btn"><a class="btnAnsw" data-id="2"><i></i><span>点击选择</span></a></p>
+           	</div>
+        </section>
+        <!--end sele -->
+        
+        <section class="stage stage4" data-id="4">
+            <div class="intro">
+            	<h4>征服时间的王者</h4>
+            	<p>日复一日，卡地亚始终充满着想象力和创造力，在2009年及2012年，卡地亚踏上前所未有的技术冒险之旅，设计出两款革命性概念腕表，这两款独一无二的时计，堪称无与伦比的创新典范，代表着卡地亚的未来愿景，开启了令人称奇的全新视野。</p>
+            </div>
+        	<!--end intro -->
+        </section>
+        <!--end stage -->
+        
+        
+        <section class="prdu prdu5" data-id="4">
+        	<h4 class="big">CARTIER ID ONE<br>概念腕表</h4>
+            <div class="intro">  
+            	<p>融合了多项材质、设计创新与精密工艺，机芯镀以ADLC碳镀层（类晶体类金刚石碳膜），从根本上解决了腕表的调校问题，创造出永恒精准的奇迹，令这款“无需调校”的腕表在钟表史上独树一帜。</p>
+            </div>
+        </section>
+        <!--end prdu -->
+                
+      	<section class="prdu prdu6" data-id="4">
+            <div class="w360" data-path='images/stage4/w2/360/'>
+            	<div class="box"><img src="images/stage4/w2/360/0.jpg"></div> 
+            	<div class="load"></div>
+            </div>
+            <h4 class="big">CARTIER ID TWO<br>概念腕表</h4>
+            <div class="intro">
+            	<p>卡地亚工作坊精制手动上链机械机芯，无需调校和润滑。42毫米Ceramyst™ 多晶硅透明陶瓷一体成型表壳，采用Airfree™技术“纳米粒子”真空加压密封，黑色鳄鱼皮表带，18K白K金折叠表扣。</p>
+                <p class="btn"><a id="btnView">查看风范测试结果</a></p>
+            </div>
+            <div class="sign360"><img src="images/common/360.png"></div>
+        </section>
+        <!--end prdu -->
+        
+        <section class="result">
+        	<ul>
+            	<li>
+                	<div class="intro">
+                    	<p>通过风范测试，您雕塑的个人风范是：</p>
+                        <h4>优雅风范 美学经典</h4>
+                        <p>推荐您佩戴的卡地亚腕表是：</p>
+                        <h5>TANK MC 腕表</h5>
+                    </div>
+                    <a class="btnShare w1"><i></i><span>分享</span></a>
+                </li>
+                <li>
+                	<div class="intro">
+                    	<p>通过风范测试，您雕塑的个人风范是：</p>
+                        <h4>突破创新 开拓进取</h4>
+                        <p>推荐您佩戴的卡地亚腕表是：</p>
+                        <h5>Santos-Dumont<br>动力储存日历显示腕表</h5>
+                    </div>
+                    <a class="btnShare w2"><i></i><span>分享</span></a>
+                </li>
+                <li>
+                	<div class="intro">
+                    	<p>通过风范测试，您雕塑的个人风范是：</p>
+                        <h4>非凡卓越 致臻完美</h4>
+                        <p>推荐您佩戴的卡地亚腕表是：</p>
+                        <h5>Rotonde de Cartier<br>双重神秘陀飞轮腕表</h5>
+                    </div>
+                    <a class="btnShare w3"><i></i><span>分享</span></a>
+                </li>
+                <li>
+                	<div class="intro">
+                    	<p>通过风范测试，您雕塑的个人风范是：</p>
+                        <h4>精致优雅 精湛出众</h4>
+                        <p>推荐您佩戴的卡地亚腕表是：</p>
+                        <h5>Ballon Bleu de Cartier<br>卡地亚蓝气球浮动式陀飞轮腕表</h5>
+                    </div>
+                    <a class="btnShare w4"><i></i><span>分享</span></a>
+                </li>  
+            </ul>       
+        </section>
+        <!--end result -->
+        
+    </div>
+    <!--end container -->
+    
+    <nav class="thumb">
+    	<ul>
+        	<li class="active"><i class="line1"></i><i class="line2"></i><i class="cube"></i><i class="pt"></i><span>海味购</span></li>
+            <li><i class="line1"></i><i class="line2"></i><i class="cube"></i><i class="pt"></i><span>活动规则</span></li>
+            <li><i class="line1"></i><i class="line2"></i><i class="cube"></i><i class="pt"></i><span>领取红包</span></li>
+            <li><i class="line1"></i><i class="line2"></i><i class="cube"></i><i class="pt"></i><span>红包查询</span></li>
+        </ul>
+    </nav>
+    <!--end nav -->
+    
+    <a class="btnL" id="btnL"></a>
+    <a class="btnR" id="btnR"></a>
+    
+   
+    <!--end btnVideo -->
+    
+    <div id="maskBox"></div>
+    
+    <nav class="slide off">
+    	<h3><img src="images/common/sanmeer.png"></h3>
+        <ul>
+       	  	<li class="active"><i class="line"></i><i class="cube"></i><i class="pt"></i><span>海味购</span></li>
+            <li><i class="line"></i><i class="cube"></i><i class="pt"></i><span>活动规则</span></li>
+            <li><i class="line"></i><i class="cube"></i><i class="pt"></i><span>领取红包</span></li>
+            <li><i class="line"></i><i class="cube"></i><i class="pt"></i><span>红包查询</span></li>
+        </ul>
+    </nav>
+    <!--end nav -->
+    
+<!-- InstanceEndEditable -->
+</div>
+<!--end wrap -->
+    
+    <div id="popAlert">
+        <p class="text"></p>
+        <p class="btn"><a class="close">确认</a></p>
+    </div>
+    <!--end popAlert -->
+    
+    <div id="shareWx">
+    	<span><img src="images/common/share.png"></span>
+    </div>
+    <!--end shareWx -->
+    
+    <div id="shareWb">分享成功</div>
+     <!--end shareWb -->
+    
+    <div id="blackBox"></div>
+    
+	<div id="loadBox"><span></span></div>
+    <!--end loadBox -->
+    
+    <div id="turnBox"><span></span></div>
+    <!--end turn -->
+    
+<!-- InstanceBeginEditable name="popup" -->
+
+<!-- InstanceEndEditable -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/framwork.iphone.js"></script>
+<script type="text/javascript" src="js/iphone.pop.js"></script>
+<script type="text/javascript" src="js/iphone.focusR.js"></script>
+<script type="text/javascript" src="js/iphone.frame.js"></script>
+<script type="text/javascript" src="js/share.js"></script>
+<!-- InstanceBeginEditable name="script" -->
+<!--<script>
+var shareData={title:'海味购 够海味',text:'＃Time Art 卡地亚时间艺术展# 我正在欣赏“瞬息•永恒——卡地亚时间艺术展”，现在身处风格演进展厅。一起体验时间艺术的精彩绝伦，点击进入卡地亚在线展览。'};//微博分享内容
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=659298906" type="text/javascript" charset="utf-8"></script>
+-->
+<script type="text/javascript" src="js/index.js"></script>
+
+<!-- InstanceEndEditable -->
+<script>
+var lineLink = "http://t.buzzreader.cn/cartier_shape_your_time/mobile/",
+	imgUrl = "http://t.buzzreader.cn/cartier_shape_your_time/mobile/images/share.jpg",
+	shareTitle = '卡地亚 Cartier',
+	descContent = "卡地亚SHAPE YOUR TIME™风范测试，邀您一起雕塑时光";
+
+function shareFriend() {
+	WeixinJSBridge.invoke("sendAppMessage", {
+		img_url: imgUrl,
+		img_width: "212",
+		img_height: "212",
+		link: lineLink,
+		desc: descContent,
+		title: shareTitle
+	},
+	function (res) { 
+		if(res.err_msg != 'send_app_msg:cancel' && res.err_msg != 'share_timeline:cancel') {
+			monitorFunc(null,{label:'转发朋友'});
+		} 
+	})
+}
+function shareTimeline() {
+	WeixinJSBridge.invoke("shareTimeline", {
+		img_url: imgUrl,
+		img_width: "212",
+		img_height: "212",
+		link: lineLink,
+		desc: descContent,
+		title: descContent
+	},
+	function (res) {
+		if(res.err_msg != 'send_app_msg:cancel' && res.err_msg != 'share_timeline:cancel') {
+			monitorFunc(null,{label:"分享朋友圈"});
+		} 
+	})
+}	
+document.addEventListener("WeixinJSBridgeReady",
+function () {
+	WeixinJSBridge.on("menu:share:appmessage",
+	function (e) {
+		shareFriend()
+	});
+	WeixinJSBridge.on("menu:share:timeline",
+	function (e) {
+		shareTimeline()
+	})
+});
+</script>
+
+</body>
+<!-- InstanceEnd --></html>
